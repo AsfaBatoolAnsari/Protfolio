@@ -111,7 +111,7 @@ section
 .header .logo
 {
     text-transform: uppercase;
-    border-bottom: var(--border-bold);
+    text-decoration: underline;
     font-size: 4.5rem;
 }
 .header .navbar
@@ -212,6 +212,7 @@ section
     max-width: 70rem;
     line-height: 2;
     font-size: 1.7rem;
+    text-transform: none;
 }
 .about .biography .bio 
 {
@@ -459,9 +460,6 @@ form .btn
     text-transform: none;
 }
 
-
-
-
 /*----------------------COPYRIGHT----------------*/
 
 .credit
@@ -559,11 +557,23 @@ form .btn
     }
     .header.active
     {
-        padding-top: 7rem;
+        margin-left: -3rem;
+    }
+    .header .logo
+    {
+        padding-left: 3rem;
+        text-decoration: underline;
+    }
+    .navbar a:hover
+    {
+        background-color: #ffcc0d;
     }
     #menu-btn .fa-solid
     {
-        right: 0%;
+        padding-left: 1rem;
+        font-size: 2.5rem;
+        padding-right: 1rem;
+        display: inline-block;
     }
     .home .image img 
     {
@@ -576,10 +586,15 @@ form .btn
     }
     .about .biography .bio h3
     {
-        font-size: 1rem;
+        font-size: 2rem;
+    }
+    .protfolio .box-container img:hover 
+    {
+        transform: scale(1.1);
     }
     .contact .from-text
     {
         width: 100%;
+        height: auto;
     }
 }
